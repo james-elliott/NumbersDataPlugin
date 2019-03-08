@@ -1,0 +1,27 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "suppliesData": true,
+  "commands": [
+    {
+      "script": "my-command.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "Shutdown": "onShutdown",
+          "SevenDigits": "onSevenDigits",
+          "SixDigits": "onSixDigits",
+          "FiveDigits": "onFiveDigits",
+          "FourDigits": "onFourDigits",
+          "ThreeDigits": "onThreeDigits",
+          "TwoDigits": "onTwoDigits",
+          "OneDigits": "onOneDigits"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Numbers"
+  }
+}
