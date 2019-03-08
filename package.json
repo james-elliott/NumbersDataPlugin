@@ -11,7 +11,11 @@
     "main": "numbers.sketchplugin",
     "assets": [
       "assets/**/*"
-    ]
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/james-elliott/NumbersDataPlugin.git"
+    }
   },
   "scripts": {
     "build": "skpm-build",
