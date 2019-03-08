@@ -1,6 +1,6 @@
 {
   "name": "Numbers",
-  "version": "0.2.2",
+  "version": "0.2.0",
   "description": "Generates random numbers of specific lengths",
   "engines": {
     "sketch": ">=3.0"
