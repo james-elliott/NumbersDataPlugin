@@ -16,7 +16,8 @@
           "FourDigits": "onFourDigits",
           "ThreeDigits": "onThreeDigits",
           "TwoDigits": "onTwoDigits",
-          "OneDigits": "onOneDigits"
+          "OneDigits": "onOneDigits",
+          "Percentage": "onPercentage"
         }
       }
     }

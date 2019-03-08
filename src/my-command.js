@@ -11,6 +11,7 @@ export function onStartup () {
   DataSupplier.registerDataSupplier('public.text', '100', 'ThreeDigits');
   DataSupplier.registerDataSupplier('public.text', '10', 'TwoDigits');
   DataSupplier.registerDataSupplier('public.text', '1', 'OneDigits');
+  DataSupplier.registerDataSupplier('public.text', 'Percent', 'Percentage');
 }
 
 export function onShutdown () {
@@ -77,6 +78,15 @@ export function onOneDigits (context) {
   const items = util.toArray(context.data.items).map(sketch.fromNative)
   items.forEach((item, index) => {
     let data = randomNum(9);
+    DataSupplier.supplyDataAtIndex(dataKey, data, index)
+  })
+}
+
+export function onPercentage (context) {
+  let dataKey = context.data.key
+  const items = util.toArray(context.data.items).map(sketch.fromNative)
+  items.forEach((item, index) => {
+    let data = Math.floor(Math.random() * 100) + "%";
     DataSupplier.supplyDataAtIndex(dataKey, data, index)
   })
 }
